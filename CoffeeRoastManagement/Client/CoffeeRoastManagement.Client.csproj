@@ -5,6 +5,9 @@
     <Authors>Michael Boegl</Authors>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="Fluxor" Version="4.1.0" />
+    <PackageReference Include="Fluxor.Blazor.Web" Version="4.1.0" />
+    <PackageReference Include="Fluxor.Blazor.Web.ReduxDevTools" Version="4.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="5.0.4" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="5.0.4" PrivateAssets="all" />
     <PackageReference Include="MudBlazor" Version="5.0.7" />
