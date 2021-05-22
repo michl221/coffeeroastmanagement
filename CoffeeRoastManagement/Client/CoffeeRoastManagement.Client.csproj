@@ -5,7 +5,6 @@
     <Authors>Michael Boegl</Authors>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="ChartJs.Blazor.Fork" Version="2.0.2" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="5.0.4" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="5.0.4" PrivateAssets="all" />
     <PackageReference Include="MudBlazor" Version="5.0.7" />
