@@ -48,19 +48,21 @@
                     new {
                         Data = Artisan.Temp1.ToArray(),
                         Label = "Environment temp.",
+                        Stepped = false,
                         BackgroundColor = "red"
                     },
-                    new
-                    {
+                    new {
                         Data = Artisan.Temp2.ToArray(),
                         Label = "Bean temp.",
+                        Stepped = false,
                         BackgroundColor = "blue"
                     },
-                    //new
-                    //{
-                    //    Data = Artisan.ExtraTemp.ToArray(),
-                    //    Label = 
-                    //}
+                    new {
+                        Data = Artisan.ExtraTemp1[0].ToArray(),
+                        Label = "Power",
+                        Stepped = true,
+                        BackgroundColor = "grey"
+                    }
                 },
                 Labels = labels,
             }
