@@ -33,6 +33,7 @@ namespace CoffeeRoastManagement.Shared.DataModel
         public List<double> Temp2 { get; set; }
         public List<List<double>> ExtraTemp1 { get; set; }
         public List<List<double>> ExtraTemp2 { get; set; }
+        [JsonProperty("computed")]
         public Computed ComputedValues { get; set; }
         public List<double> TimeIndex { get; set; }
         public List<double> SpecialEvents { get; set; }
@@ -87,7 +88,7 @@ namespace CoffeeRoastManagement.Shared.DataModel
         public double SecondCrackStartBeanTemp { get; set; }
         [JsonProperty("SCe_time")]
         public double SecondCrackEndTime { get; set; }
-        [JsonProperty("FCe_ET")]
+        [JsonProperty("SCe_ET")]
         public double SecondCrackEndEnvTemp { get; set; }
         [JsonProperty("SCe_BT")]
         public double SecondCrackEndBeanTemp { get; set; }
