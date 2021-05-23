@@ -10,10 +10,6 @@
 
     [Parameter] public string Id { get; set; }
     [Parameter] public ArtisanFile Artisan { get; set; }
-    //[Parameter] public ChartType Type { get; set; }
-    //[Parameter] public string[] Data { get; set; }
-    //[Parameter] public string[] BackgroundColor { get; set; }
-    //[Parameter] public string[] Labels { get; set; }
 
     private string FormatAsMinuteSecond(int value)
     {
@@ -68,6 +64,6 @@
             }
         };
 
-        await JSRuntime.InvokeVoidAsync("artisanprofilegraph", Id, config);
+        await JSRuntime.InvokeVoidAsync("chartwrapper", Id, config);
     }
 }
