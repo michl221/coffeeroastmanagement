@@ -4,14 +4,14 @@
 var target = Argument("target", "Build");
 var configuration = Argument("configuration", "Release");
 
+// docker secrets
+var DockerUser = Argument("dockeruser", "");
+var DockerSecret = Argument("dockersecret", "");
+
 var SoftwareVersionComplete = GitVersion();
 
 // version information
 var SoftwareVersion = SoftwareVersionComplete.FullSemVer;
-
-// docker secrets
-var DockerUser = "mb221";
-var DockerSecret = "c5030f45-d1ce-4709-acfb-d1ca66f93dff";
 
 //////////////////////////////////////////////////////////////////////
 // TASKS
